@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login JavaScript</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<script>
+    function Login(){
+        let username = document.getElementById("un").value;
+        let password = document.getElementById("pw").value;
+
+        if(username == "bayu61709" && password == "bayu61709"){
+            alert("Login Anda Berhasil");
+            document.write("#")
+        }
+        else{
+            alert("Tidak Terdaftar")
+        }
+    }
+</script>
+<body>
+	<div class="container"> 
+		<h1 class="title">User Login</h1>
+		<form class="login_form" method="post" name="form">
+			<div class="un">Username : </div>
+			<input autocomplete="off" type="text" id="id" name="log" placeholder="username">
+			<div class="pw">Password : </div>
+			<input type="password" id="pass" name="passw" placeholder="password">
+			<button type="button" value="login" name="kirim" onclick="login()">Login</button>
+		</form>
+	</div>
+</body>
+</html>
